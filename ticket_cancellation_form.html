@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ticket Cancellation Form</title>
+  <link rel="stylesheet" href="ticket_cancellation_form.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Ticket Cancellation Request</h2>
+  <form action="#" method="POST" class="cancellation-form">
+
+    <div class="form-group">
+      <label for="bookingId">Booking ID</label>
+      <input type="text" id="bookingId" name="bookingId" required placeholder="Enter your booking ID">
+    </div>
+
+    <div class="form-group">
+      <label for="fullName">Passenger Name</label>
+      <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+    </div>
+
+    <div class="form-group">
+      <label for="reason">Reason for Cancellation</label>
+      <textarea id="reason" name="reason" rows="4" required placeholder="Briefly mention your reason"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="refundMode">Preferred Refund Mode</label>
+      <select id="refundMode" name="refundMode" required>
+        <option value="">Select Refund Mode</option>
+        <option value="Bank Transfer">Bank Transfer</option>
+        <option value="Original Payment Method">Original Payment Method</option>
+        <option value="Credit to Wallet">Credit to Wallet</option>
+      </select>
+    </div>
+
+    <button type="submit" class="submit-button">Submit Cancellation</button>
+
+  </form>
+</div>
+
+</body>
+</html>

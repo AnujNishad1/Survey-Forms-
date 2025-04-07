@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Job Joining Form</title>
+  <link rel="stylesheet" href="job_joining.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>New Job Joining Form</h2>
+  <form action="thankyou.html" method="POST" class="joining-form">
+
+    <div class="form-group">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+    </div>
+
+    <div class="form-group">
+      <label for="position">Position Joining</label>
+      <input type="text" id="position" name="position" required placeholder="Job Position Title">
+    </div>
+
+    <div class="form-group">
+      <label for="joining_date">Joining Date</label>
+      <input type="date" id="joining_date" name="joining_date" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Residential Address</label>
+      <textarea id="address" name="address" rows="3" required placeholder="Enter your full address"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="experience">Previous Work Experience</label>
+      <textarea id="experience" name="experience" rows="3" placeholder="Briefly describe your past work"></textarea>
+    </div>
+
+    <button type="submit" class="submit-button">Submit Form</button>
+
+  </form>
+</div>
+
+</body>
+</html>

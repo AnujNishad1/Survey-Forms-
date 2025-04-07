@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Railway Ticket Booking Form</title>
+  <link rel="stylesheet" href="railway_ticket_booking.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Railway Ticket Booking Form</h2>
+  <form action="#" method="POST" class="booking-form">
+
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+    </div>
+
+    <div class="form-group">
+      <label for="fromStation">From Station</label>
+      <input type="text" id="fromStation" name="fromStation" required placeholder="Departure station">
+    </div>
+
+    <div class="form-group">
+      <label for="toStation">To Station</label>
+      <input type="text" id="toStation" name="toStation" required placeholder="Destination station">
+    </div>
+
+    <div class="form-group">
+      <label for="travelDate">Travel Date</label>
+      <input type="date" id="travelDate" name="travelDate" required>
+    </div>
+
+    <div class="form-group">
+      <label for="class">Class</label>
+      <select id="class" name="class" required>
+        <option value="">Select Class</option>
+        <option value="Sleeper">Sleeper (SL)</option>
+        <option value="AC 3 Tier">AC 3 Tier (3A)</option>
+        <option value="AC 2 Tier">AC 2 Tier (2A)</option>
+        <option value="AC First Class">AC First Class (1A)</option>
+        <option value="Second Sitting">Second Sitting (2S)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="passengers">Number of Passengers</label>
+      <input type="number" id="passengers" name="passengers" min="1" max="6" required>
+    </div>
+
+    <button type="submit" class="submit-button">Book Ticket</button>
+
+  </form>
+</div>
+
+</body>
+</html>
